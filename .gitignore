@@ -1,0 +1,10 @@
+scrape-clinicadelparque.es/
+branding/
+portal/shots/
+web/shots/
+web-src/shots/
+node_modules/
+*.log
+portal/verify.cjs
+web/verify.cjs
+.vercel/
