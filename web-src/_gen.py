@@ -145,7 +145,7 @@ def nav_html(active):
     return f'''
 <div class="nav-wrap">
   <nav class="nav">
-    <a class="nav-logo" href="index.html"><img src="assets/logo-mark.png" alt="Clínica del Parque"><b>Clínica del Parque</b></a>
+    <a class="nav-logo" href="index.html"><img src="assets/logo.jpg" alt="Clínica del Parque"><b>Clínica del Parque</b></a>
     <div class="nav-links">{links}</div>
     <div class="nav-cta"><a class="btn btn-primary" href="contacto.html">Pedir cita {av_arrow()}</a></div>
     <button class="hamb" aria-label="Menú"><span></span><span></span></button>
@@ -269,7 +269,6 @@ def home():
   <canvas id="hero-canvas"></canvas>
   <div class="hero-veil"></div>
   <div class="container"><div class="hero-inner">
-    <span class="eyebrow reveal in"><span class="dot"></span>Clínica multidisciplinar · Arturo Soria, Madrid</span>
     <h1 class="display reveal in">Tu salud y tu bienestar, <span class="serif-italic kicker">en un mismo lugar.</span></h1>
     <p class="lead reveal in d1">Seis especialidades y un equipo propio para cuidarte de forma integral: fisioterapia, podología, nutrición, psicología, homeopatía y medicina estética.</p>
     <div class="hero-cta reveal in d2">
