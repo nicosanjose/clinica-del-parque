@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica del Parque · Proyecto (web + portal)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--brand:#00BCD4;--navy:#2B354B;--ink:#1c2536;--ink2:#566178;--line:rgba(43,53,75,.1)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);min-height:100vh;display:grid;place-items:center;padding:32px;
+    background:radial-gradient(900px 600px at 80% -10%,rgba(0,188,212,.14),transparent 60%),radial-gradient(800px 500px at -5% 110%,rgba(63,81,181,.1),transparent 55%),#f5f7fa}
+  .wrap{width:100%;max-width:900px}
+  .head{text-align:center;margin-bottom:38px}
+  .logo{height:52px;margin:0 auto 20px;display:block;background:#fff;border-radius:12px;padding:8px 12px;box-shadow:0 8px 24px rgba(43,53,75,.08)}
+  h1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(2rem,5vw,3rem);color:var(--navy);letter-spacing:-.02em}
+  .head p{color:var(--ink2);margin-top:10px;font-size:1.05rem}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:680px){.cards{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px 28px;text-decoration:none;color:inherit;
+    box-shadow:0 2px 6px rgba(43,53,75,.04),0 14px 34px rgba(43,53,75,.07);transition:transform .5s cubic-bezier(.32,.72,0,1),box-shadow .5s}
+  .card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(43,53,75,.14)}
+  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--brand);
+    background:#ecfbfd;border:1px solid #d3f4f8;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+  .card h2{font-family:'Fraunces',serif;font-weight:500;font-size:1.5rem;color:var(--navy);margin-bottom:8px}
+  .card p{color:var(--ink2);font-size:.95rem}
+  .go{margin-top:20px;display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:14px;color:#017f92}
+  .go .a{width:28px;height:28px;border-radius:50%;background:#ecfbfd;display:grid;place-items:center;transition:transform .4s}
+  .card:hover .go .a{transform:translate(3px,-2px)}
+  .note{text-align:center;margin-top:30px;font-size:13px;color:#8a94a6}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <img class="logo" src="web/assets/logo.jpg" alt="Clínica del Parque">
+      <h1>Clínica del Parque</h1>
+      <p>Proyecto de demostración · dos entregables</p>
+    </div>
+    <div class="cards">
+      <a class="card" href="web/index.html">
+        <span class="tag">Web pública</span>
+        <h2>Web remodelada</h2>
+        <p>Sitio multipágina, visual y profesional: hero interactivo, aura de cursor, 6 especialidades, equipo y contacto.</p>
+        <span class="go"><span>Ver la web</span><span class="a">→</span></span>
+      </a>
+      <a class="card" href="portal/index.html">
+        <span class="tag">Portal interno</span>
+        <h2>Portal de administración</h2>
+        <p>Vista de dirección (god-view) + panel por área: agenda, pacientes, historia clínica 360 e informes. Datos ficticios.</p>
+        <span class="go"><span>Abrir el portal</span><span class="a">→</span></span>
+      </a>
+    </div>
+    <p class="note">Rediseño y prototipo · datos de pacientes inventados · sin relación oficial con la clínica.</p>
+  </div>
+</body>
+</html>
